@@ -1,9 +1,15 @@
 <html>
   <head>
-
+	<style>
+	body{
+		max-width:900px;
+		margin:auto;
+		background-color: #ffe;
+	 </style>
+	  
   </head>
   <body>
-    <h1>Basic OAuth example using implicit flow</h1>
+    <h1>oAuth Login!</h1>
 
     <script>
       // This is an example of a SPA (Single Page App) with OAuth authentication
@@ -76,7 +82,7 @@
 	  console.log(myJson);
 	  // Pure javascript to insert a couple of components to the page
 	  let userinfo = document.createElement('h2');
-	  userinfo.innerText = `Hello ${myJson.name}`;
+	  userinfo.innerText = `Hello ${myJson.name}!!`;
 	  document.body.append(userinfo);
 	  let userpic = document.createElement('img');
 	  userpic.src = myJson.picture.data.url;
