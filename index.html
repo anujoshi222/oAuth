@@ -2,9 +2,9 @@
   <head>
 	<style>
 	body{
-		max-width:900px;
+		max-width:1000px;
 		margin:auto;
-		background-color: #ffe;
+		background-color: ;
 		}
 		h1 {
     text-align: center;
@@ -16,7 +16,7 @@
 		width: 100px;
 		height: 100px;
 		object-fit: cover;
-		border:1px red solid;
+		border:5px red solid;
 		border-radius: 50%;
 		}
 		
@@ -102,6 +102,11 @@
 	  let userpic = document.createElement('img');
 	  userpic.src = myJson.picture.data.url;
 	  document.body.append(userpic);
+	   let useremail = document.createElement('h3');
+	    useremail.innerText = `Email Id: ${myJson.email}`;
+	      document.body.append(useremail);
+	    
+
       });
       
       
